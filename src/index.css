@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+*{
+    transition: 0.3s;
+}
+
+.custom-gradient {
+  --from-color: #1A1A1A;
+  --to-color: color-mix(in oklab, #2D2D2D 50%, transparent);
+
+  background-image: linear-gradient(
+    to bottom right in oklab,
+    var(--from-color),
+    var(--to-color)
+  );
+}
+
+.bottomline{
+  cursor: pointer;
+}
+
+.storycon{
+  height: 30px;
+  padding-top: 5px;
+}
+
+.bottomline:hover .storycon {
+  padding-top: 0px;
+}
