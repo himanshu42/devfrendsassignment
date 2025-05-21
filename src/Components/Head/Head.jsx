@@ -24,9 +24,9 @@ const Head = () => {
 
         <div className='flex items-center gap-4'>
             {/* <div className='hover:bg-white/10 hover:text-black rounded-full flex items-center justify-center'> */}
-                <LuPalette className="w-8 h-8 text-white hover:text-black p-2 rounded-full hover:bg-white/10" />
+                <LuPalette className="w-8 h-8 text-white hover:text-black/80 p-2 rounded-full hover:bg-white/10" />
             {/* </div> */}
-            <FiGlobe className="w-8 h-8 text-white hover:text-black p-2 rounded-full hover:bg-white/10" />
+            <FiGlobe className="w-8 h-8 text-white hover:text-black/80 p-2 rounded-full hover:bg-white/10" />
             <div className='flex items-center gap-2'>
                 <FiPhone className='text-yellow-500' />
                 <h1 className='text-white font-semibold'>+91 1234567890</h1>

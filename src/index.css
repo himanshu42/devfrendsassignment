@@ -27,3 +27,73 @@
 .bottomline:hover .storycon {
   padding-top: 0px;
 }
+
+.underline{
+  background-color: #f4bf37;
+  width: 5%;
+  height: 3px;
+}
+
+.bottomline:hover .underline{
+  width: 28%;
+}
+
+.tiltdiv{
+  transform: rotate(5deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutimgdiv{
+  cursor: pointer;
+}
+
+.aboutimgdiv:hover .tiltdiv{
+  transform: rotate(0deg);
+}
+
+.aboutimg{
+  -webkit-transform: scale(1);
+	transform: s cale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  opacity: 0.9;
+  background-color: Black;
+}
+
+.aboutimgdiv:hover .aboutimg{
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.aboutquote{
+  color: #7b652f;
+}
+
+.quotediv{
+  cursor: pointer;
+}
+
+.quotediv:hover .aboutquote{
+  transform: rotate(20deg);
+  color: #f4bf37;
+  font-size: 18px;
+}
+
+.quotediv:hover{
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.linediv{
+  background-color: #7b652f;
+  width: 100%;
+  height: 0.5px;
+  margin-top: 10px;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.quotediv:hover .linediv{
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
