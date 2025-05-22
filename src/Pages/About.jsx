@@ -3,9 +3,9 @@ import { IoMdQuote } from "react-icons/io";
 
 const About = () => {
   return (
-    <section className="bg-[#1a1a1a] text-white py-16 px-4" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div className='w-80 h-80 bg-white rounded-full bg-yellow-400/10' style={{position:'absolute', top:-100, right:-100}}></div>
-        <div className='w-70 h-70 bg-white rounded-full bg-yellow-400/10' style={{position:'absolute', bottom:-100, left:-100}}></div>
+    <section id='aboutpmc' className="bg-[#1a1a1a] text-white py-16 px-4" style={{ position: 'relative', overflow: 'hidden' }}>
+        <div className='w-80 h-80 bg-white rounded-full bg-yellow-300/10' style={{position:'absolute', top:-100, right:-100}}></div>
+        <div className='w-70 h-70 bg-white rounded-full bg-yellow-300/10' style={{position:'absolute', bottom:-100, left:-100}}></div>
         <div className='mb-10 bottomline flex flex-col items-center'>
           <h3 className="text-[#f4bf37] text-sm font-semibold w-full text-center storycon">Our Story</h3>
           <h1 className="text-4xl font-bold w-full text-center">About PMC Barbershop</h1>

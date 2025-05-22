@@ -4,6 +4,10 @@
     transition: 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .custom-gradient {
   --from-color: #1A1A1A;
   --to-color: color-mix(in oklab, #2D2D2D 50%, transparent);
@@ -16,7 +20,7 @@
 }
 
 .bottomline{
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .storycon{
@@ -44,7 +48,7 @@
 }
 
 .aboutimgdiv{
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .aboutimgdiv:hover .tiltdiv{
@@ -70,7 +74,7 @@
 }
 
 .quotediv{
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .quotediv:hover .aboutquote{
@@ -97,3 +101,59 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
+.serviceCard{
+  overflow: hidden;
+}
+
+.serviceCard::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(to right, #eab738, transparent);
+      transform: translateX(-100%);
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .serviceCard:hover::before {
+      transform: translateX(0);
+    }
+    .serviceCard:hover .imgdiv{
+      background-color: #373225;
+    }
+
+    .commitmentCard{
+      overflow: hidden;
+      position: relative;
+    }
+
+    .commitmentCard:hover .Comtextdiv{
+      background-color: #f4bf37;
+    }
+
+    .commitmentCard:hover span{
+      color: #FFF;
+    }
+
+    .commitmentCard:hover h1{
+      color: #f4bf37;
+    }
+
+    .commitmentCard::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f4bf37;
+      transform: translateX(-99%);
+      transition: transform 0.25s ease-in-out;
+    }
+    
+    .commitmentCard:hover::before {
+      transform: translateY(-99%);
+    }

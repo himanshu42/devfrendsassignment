@@ -34,7 +34,9 @@ const Home = () => {
             Book Now
           </button>
         </div>
-        <FaArrowDown className='mt-10 mx-auto text-[#e2b235] animate-pulse pb-0 h-15 hover:pb-5' />
+        <a href="#aboutpmc">
+          <FaArrowDown className='mt-10 mx-auto text-[#e2b235] animate-pulse pb-0 h-15 hover:pb-5 cursor-pointer' />
+        </a>
       </div>
 
       {/* Right Image Section */}
